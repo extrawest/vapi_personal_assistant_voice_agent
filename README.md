@@ -33,6 +33,20 @@ https://github.com/user-attachments/assets/5859b32b-7c49-487b-84c7-7647eb0d860a
 - **📞 Call Initiation**: Trigger outbound calls via Vapi AI API
 - **🔄 Vapi AI Integration**: Process natural language commands into structured API calls
 - **🔧 Clean Architecture**: Follows best practices with proper separation of concerns
+- **🧠 Persistent Memory** *(optional)*: Semantic memory across sessions via [General Intellect](https://github.com/General-Intellect/general-intellect)
+
+### Memory setup
+
+Two new Vapi tools are available — `recallMemory` and `remember` — that your assistant can call to retrieve and store context across sessions.
+
+To enable, start the memory server and set `GI_URL`:
+
+```bash
+docker run -p 8000:8000 generalintelect/gi-server
+export GI_URL=http://localhost:8000
+```
+
+If `GI_URL` is not set, the tools still respond correctly — they simply return an empty context. No breaking changes.
 
 ## 🚀 Getting Started
 
