@@ -5,3 +5,4 @@ pydantic-settings==2.9.1
 sqlalchemy==2.0.41
 uvicorn==0.34.2
 requests==2.31.0
+general-intellect>=0.1.0
